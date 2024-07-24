@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PercentUi: About us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+                    @keyframes rotation {
+                        100% {transform: rotate(180deg);}
+                    }
+                    body {
+                        font-family: 'Poppins', sans-serif;
+                    }
+                    .ustext {
+                        text-align: center;
+                        width: 100%;
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 20px;
+                        color: #4F7868;
+                        /*border: 2px solid red*/
+                    }
+                    .abouttext {
+                        width: 100%;
+                        height: 300px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 20px;
+                        color: #4F7868;
+                        /*border: 2px solid red*/
+                    }
+                    .topbar {
+                        background-color: #C8D1C0;
+                        width: 100%;
+                        height: 88px
+                    }
+                    .dropbtn {
+                      background-color: transparent;
+                      color: white;
+                      padding: 16px;
+                      font-size: 16px;
+                      border: none;
+
+                    }
+
+                    .dropdown {
+                      position: relative;
+                      display: inline-block;
+                    }
+
+                    .dropdown-content {
+                      display: none;
+                      position: absolute;
+                      right: 0;
+                      background-color: #C8D1C0;
+                      min-width: 160px;
+                      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                      z-index: 1;
+                    }
+
+                    .dropdown-content a {
+                      color: black;
+                      padding: 12px 16px;
+                      text-decoration: none;
+                      display: block;
+                    }
+
+                    .dropdown-content a:hover {background-color: #ddd;}
+
+                    .dropdown:hover .dropdown-content {display: block;}
+
+                    .dropdown:hover .dropbtn {background-color: transparent;}
+                    .dropbtn:hover {
+                        animation: rotation 0.5s;
+                    }
+</style>
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="dropdown" style="float:right">
+                <button class="dropbtn"><img src="icons/dropdownicon.png" alt="" width="43" height="43"></button>
+                <div class="dropdown-content">
+                    <a href="index.html" style="color: #4F7868;">Home page</a>
+                    <a href="Aboutus.html" style="color: #4F7868;">About us</a>
+                    <a href="Contact.html" style="color: #4F7868;">Contact</a>
+                    <a href="Discord.html" style="color: #4F7868;">Discord</a>
+                    <a href="Downloads.html" style="color: #4F7868;">Downloads</a>
+                    <a href="Credits.html" style="color: #4F7868;">Credits</a>
+                </div>
+            </div>
+        </div>
+        <div class="ustext">About Us:</div>
+        <div class="abouttext">
+                               We are PercentUI, a group of teenagers creating an innovative<br/>
+                               operating system called PercentUI, based on Android! Our OS will<br/>
+                               feature exciting new functionalities developed by us!
+        </div>
+    </body>
+</html>
