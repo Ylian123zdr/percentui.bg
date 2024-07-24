@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>PercentUi: Solar Apps</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+            @keyframes rotation {
+                100% {transform: rotate(180deg);}
+            }
+            .down2text {
+                text-align: center;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                color: #4F7868;
+            }
+            .downn2text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+            }
+            body {
+                font-family: 'Poppins', sans-serif;
+            }.topbar {
+                background-color: #C8D1C0;
+                width: 100%;
+                height: 88px
+            }
+            .dropbtn {
+              background-color: transparent;
+              color: white;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+              
+            }
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              right: 0;
+              background-color: #C8D1C0;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+
+            .dropdown-content a:hover {background-color: #ddd;}
+
+            .dropdown:hover .dropdown-content {display: block;}
+
+            .dropdown:hover .dropbtn {background-color: transparent;}
+            .dropbtn:hover {
+                animation: rotation 0.5s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="dropdown" style="float:right">
+                <button class="dropbtn"><img src="icons/dropdownicon.png" alt="" width="43" height="43"></button>
+                <div class="dropdown-content">
+                    <a href="index.html" style="color: #4F7868;">Home page</a>
+                    <a href="Aboutus.html" style="color: #4F7868;">About us</a>
+                    <a href="Contact.html" style="color: #4F7868;">Contact</a>
+                    <a href="Discord.html" style="color: #4F7868;">Discord</a>
+                    <a href="Downloads.html" style="color: #4F7868;">Downloads</a>
+                    <a href="Credits.html" style="color: #4F7868;">Credits</a>
+                </div>
+            </div>
+        </div>
+        <div class="down2text">Download ROM</div>
+        <div class="downn2text">
+            <div class="downn2text">
+                SolarAI: 
+            </div><br/>
+            <button id="solai">
+                <img src="icons/solarAIicon.jpg" alt="" width="100" height="100">
+            </button>
+        </div>
+        <div class="downn2text">
+            <div class="downn2text">
+                SolarMusic:  
+            </div><br/>
+                <button id="solmus">
+                    <img src="icons/solarmusicicon.png" alt="" width="100" height="100">
+                </button>
+        </div>
+        <div class="downn2text"><a href="Downloads.html">Back</a></div>
+        <script>
+            if (document.getElementById('solmus').onclick = function() {
+                window.open('https://www.mediafire.com/file/mgk2nad5jksxgfe/SolarMusic.apk/file');
+            });
+            if (document.getElementById('solai').onclick = function() {
+                window.open('https://www.mediafire.com/file/rq95slt0fpbym3h/SolarAI.signed.apk/file');
+            });
+        </script>
+    </body>
+</html>
